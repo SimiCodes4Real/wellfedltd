@@ -52,10 +52,9 @@ h2, h1, h3 {
 }
 #header-title {
 	text-transform: uppercase;
-	color: rgb(13, 95, 31);
+	color: #fff;
 	font-weight: bold;
-	font-size: 30px;
-	text-shadow: 3px 3px 3px #cecece;
+	font-size: 33px;
 }
 .logo {
 	width: 170px;
