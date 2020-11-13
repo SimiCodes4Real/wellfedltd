@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css" type="text/css">
-		<link rel="stylesheet" href="./css/style.css" type="text/css">
-		<link rel="stylesheet" href="./css/responsive.css">
-		<link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<title>WellFed Ltd</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>WellFed Ltd</title>
+	<link rel="stylesheet" href="./css/main.css" type="text/css">
+	<link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel='stylesheet' type='text/css'>
 </head>
 <body>
     <div id="site-wrapper">
-			<div class="header-banner">
-				<div class="header-content">
-					<nav class="navbar navbar-expand-lg navbar-dark bg-dark top-nav">
-						<!--<a class="navbar-brand" href="index.html" ><img src="./images/logo.png" alt="Logo" class="logo" width="100px"></a>-->
-						<a class="navbar-brand" href="#" id="header-title">WellFed Ltd</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon" ></span>
-						</button>
-				
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item">
-									<a class="nav-link menu" href="index.html">Home <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="#">Enterprise</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="saleshub-buyer.html">Sales Hub - Buyer</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="saleshub-seller.html">Sales Hub - Seller</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="#">Contact Us</a>
-								</li>
-								<!-- <li class="nav-item">
-									<a class="nav-link menu" href="#">Login / Register</a>
-								</li> -->
-							</ul>
-						</div>
-					</nav>
-					
-					<div class="header-banner-text text-center">
-						<div class="banner-text">
-							<h2>WellFed Ltd - Register as Seller</h2>
-						
+			<div class="top-header-content d-flex" style="justify-content: space-between;">
+        <div class="header-text">
+          <small>Welcome to WellFedLtd, we hope you will enjoy our products and have good experience</small>
+        </div>
+        <div class="header-email">
+          <small><i class="fa fa-envelope"></i> Email: admin@wellfedltd.org</small>
+        </div>
+        <div class="header-phone">
+          <small><i class="fa fa-phone"></i> Call Us: +2349087878767</small>
+        </div>
+			</div>
+			<div class="site-header d-flex">
+        <div class="site-title">
+          <h3>Wellfed Ltd</h3>
+        </div>
+        <div class="site-menu">
+          <div class="top-nav" id="menuTopNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Enterprise</a>
+            <div class="custom-dropdown">
+              <button class="dropbtn">Sales Hub
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="custom-dropdown-content">
+                <a href="saleshub-buyer.html">Buyer</a>
+                <a href="saleshub-seller.html">Seller</a>
+              </div>
+            </div> 
+            <a href="#">Contact Us</a>
+          
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="showMenu()">&#9776;</a>
+          </div>
+        </div>
+      </div>
+			<div id="slider">
+				<div class="slides responsive" style="background: url(images/05.jpg); background-size: cover; background-position: center center; height: 100%; background-attachment: fixed; background-color: #464646;">
+					<div class="banner-biography">
+						<div class="banner-content">
+								<h2>Sales-Hub Seller</h2>
+                <p>Our vision is to see the end of mal-nutrition, starvation, hunger and food insecurity in Africa.</p><br>
+                
 						</div>
 					</div>
 				</div>
-			</div>
+				
+      </div>
 			
 			<div class="form-data">
 				<h2>Register as Seller</h2>
@@ -73,19 +79,33 @@
 							<label for="company name">Details about Request</label>
 							<textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
 						</div>
-						<div class="text-center">
-							<input type="submit" value="Submit" name="submit" class="btn btn-primary">
+						<div class="txt-center">
+							<input type="submit" value="Submit" name="submit" class="btn-submit">
 						</div>
 					</form>
 				</div>
 			</div>
 		
 			</div>
-			<div class="footer">
-				<p>Copyright &copy; 2020. WellFed Ltd. All right reserved. </p>
+			<div class="footer d-flex" style="justify-content: space-evenly;">
+        <div class="footer-credit">
+          <p>Copyright &copy;2020 All right reserved | <a href="index.html">WellFed Ltd</a></p>
+        </div>
+        <div class="footer-menu">
+          <p>
+            <nav>
+              <a href="#">About</a>
+              <a href="#">Product</a>
+              <a href="#">Sales-Hub Buyer</a>
+              <a href="#">Sales-Hub Seller</a>
+              <a href="#">Contact</a>
+            </nav>
+          </p>
+        </div>
+        
 			</div>
-    </div>
+		
 </body>
-<script src="./js/jquery/jquery.min.js"></script>
-<script src="./js/bootstrap/bootstrap.min.js"></script>
+<script src="js/jquery/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 </html>

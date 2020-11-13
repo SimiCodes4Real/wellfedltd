@@ -3,155 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.min.css" type="text/css">
-		<link rel="stylesheet" href="./css/style.css" type="text/css">
-		<link rel="stylesheet" href="./css/responsive.css">
-		<link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<title>WellFed Ltd</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WellFed Ltd</title>
+    <link rel="stylesheet" href="./css/main.css" type="text/css">
+    <link href="./font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800,300" rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div id="site-wrapper">
-			<div class="header-banner">
-				<div class="header-content">
-					<nav class="navbar navbar-expand-lg navbar-dark bg-dark top-nav">
-						<!--<a class="navbar-brand" href="index.html" ><img src="./images/logo.png" alt="Logo" class="logo" width="100px"></a>-->
-						<a class="navbar-brand" href="#" id="header-title">WellFed Ltd</a>
-						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-								<span class="navbar-toggler-icon" ></span>
-						</button>
-				
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav ml-auto">
-								<li class="nav-item">
-									<a class="nav-link menu" href="index.html">Home <span class="sr-only">(current)</span></a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="#">Enterprise</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="saleshub-buyer.html">Sales Hub - Buyer</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="saleshub-seller.html">Sales Hub - Seller</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link menu" href="#">Contact Us</a>
-								</li>
-								<!-- <li class="nav-item">
-									<a class="nav-link menu" href="#">Login / Register</a>
-								</li> -->
-							</ul>
-						</div>
-					</nav>
-					
-					<div class="header-banner-text text-center">
-						<div class="banner-text">
-							<h2>WellFed Ltd</h2>
-							<p>Our vision is to see the end of mal-nutrition, starvation, hunger and food insecurity in Africa. </p>
-							<a href="#" class="btn blink" id="blink">
-								Know More
-							</a>
+    <div class="site-wrapper">
+      <div class="top-header-content d-flex" style="justify-content: space-between;">
+        <div class="header-text">
+          <small>Welcome to WellFedLtd, we hope you will enjoy our products and have good experience</small>
+        </div>
+        <div class="header-email">
+          <small><i class="fa fa-envelope"></i> Email: admin@wellfedltd.org</small>
+        </div>
+        <div class="header-phone">
+          <small><i class="fa fa-phone"></i> Call Us: +2349087878767</small>
+        </div>
+      </div>
+      <div class="site-header d-flex">
+        <div class="site-title">
+          <h3>Wellfed Ltd</h3>
+        </div>
+        <div class="site-menu">
+          <div class="top-nav" id="menuTopNav">
+            <a href="index.html" class="active">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Enterprise</a>
+            <div class="custom-dropdown">
+              <button class="dropbtn">Sales Hub
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="custom-dropdown-content">
+                <a href="saleshub-buyer.html">I am aBuyer</a>
+                <a href="saleshub-seller.html">I am a Seller</a>
+              </div>
+            </div> 
+            <a href="#">Contact Us</a>
+          
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="showMenu()">&#9776;</a>
+          </div>
+        </div>
+      </div>
+      <div id="slider">
+				<div class="slides responsive" style="background: url(images/05.jpg); background-size: cover; background-position: center center; height: 100%; background-attachment: fixed; background-color: #464646;">
+					<div class="banner-biography">
+						<div class="banner-content">
+								<h2>Our Vision</h2>
+                <p>Our vision is to see the end of mal-nutrition, starvation, hunger and food insecurity in Africa.</p><br>
+                <p><a href="#" class="btn btn-primary uppercase">Contact Us</a></button></p>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="content-1">
-				<!-- <h2 class="title-2">About Us</h2> -->
-				<div class="col1">
-					<p class="icon"><i class="fa fa-folder"></i></p>
-					<h2>Vision</h2>
-					<p class="content-1-text">Our vision is to see the end of mal-nutrition, starvation, hunger and food insecurity in Africa.</p>
-				</div>
-				<div class="col2">
-					<p class="icon"><i class="fa fa-history"></i></p>
-					<h2>Mission</h2>
-					<p class="content-1-text">Leverage expertise and technology to bring about cost-effective solutions across the agricultural value chain, from farming, to connecting farmers to markets, as well as adding value to agricultural produce across Africa.</p>
+				<div class="slides" style="background: url(images/3.jpg); background-size: cover">
+					<div class="banner-biography">
+						<div class="banner-content">
+								<h2>Mission</h2>
+								<p>Leverage expertise and technology to bring about cost-effective solutions across the agricultural value chain, from farming, to connecting farmers to markets, as well as adding value to agricultural produce across Africa.</p><br>
+                <p><a href="#" class="btn btn-primary uppercase">Contact Us</a></button></p>
+						</div>
+					</div>
 				</div>
 				
-			</div>
-			<div class="content-2">
-				<div class="col1">
-					<p>
-						<img src="./images/details.png" alt="farm hub" class="image-fluid w-100">
-					</p>
-				</div>
-				<div class="col2 pt-5">
-					<div class="col2-content">
-						<h2 class="title-2">WellFed Farms</h2>
-						<!-- <p class="content-2-text-1" style="font-weight: 700; font-size: 18px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rerum alias distinctio voluptates tempore similique odit libero..</p> -->
-						<p class="content-2-text-1" style="color: rgb(56, 121, 61);">Innovative, cost-effective mechanized farming, from crop production to livestock production. (read more button leads users to some pictures of our farms) </p>
-					</div>
-				</div>
-			</div>
-			<div class="content-3">
-				<h2 class="title">WellFed Enterprise</h2>
-				<p>Fresh, affordable, healthy agricultural produce to your doorsteps! Order now! (this leads to our ordering page (phone number, WhatsApp and placing order on the website)
-					We are buy agricultural produce from farmers at competitive prices. You’ve got produce to sell? Call now!
-					</p>
-			</div>
-			<div class="content-3">
-				<h2 class="title">WellFed Sales Hub</h2>
-				<p>Fresh, affordable, healthy agricultural produce to your doorsteps! Order now! (this leads to our ordering page (phone number, WhatsApp and placing order on the website)
-					We are buy agricultural produce from farmers at competitive prices. You’ve got produce to sell? Call now!
-					</p>
-			</div>
-			<!-- <div class="content-4">
-				<div class="col1">
-					<p class="icon"><img src="./images/1.jpg" alt="" class="w-100"></p>
-					<h3>Title 1</h3>
-					<p class="content-1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rerum alias distinctio voluptates tempore similique odit libero. Officia optio at repudiandae nam</p>
-				</div>
-				<div class="col2">
-					<p class="icon"><img src="./images/3.jpg" alt="" class="w-100"></p>
-					<h3>Title 2</h3>
-					<p class="content-1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rerum alias distinctio voluptates tempore similique odit libero. Officia optio at repudiandae nam </p>
-				</div>
-				<div class="col3">
-					<p class="icon"><img src="./images/5.jpg" alt="" class="w-100"></p>
-					<h3>Title 3</h3>
-					<p class="content-1-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam rerum alias distinctio voluptates tempore similique odit libero. Officia optio at repudiandae nam </p>
-				</div>
-			</div> -->
-			<div class="content-5">
-				<div class="col1 text-center">
-					<div class="col-data">
-						<!-- <h3>FarmHub Retail</h3>
-						<a href="#" class="btn blink" id="blink">
-							Know More
-						</a> -->
-						
-					</div>
-				</div>
-				<div class="col2 text-center">
-					<div class="col-data">
-						<!-- <h3>FarmHub Retail</h3>
-						<a href="#" class="btn blink" id="blink">
-							Know More
-						</a> -->
-					</div>
-				</div>
-			</div>
-			<div class="footer">
-				<p>Copyright &copy; 2020. WellFed Ltd. All right reserved. </p>
-			</div>
+      </div>
+      <div class="services d-flex mt-30">
+        <div class="service txt-center">
+          <p><img src="./images/font1.png" alt="Best Services"></p>
+          <p class="text">Best Services</p>
+        </div>
+        <div class="service txt-center">
+          <p><img src="./images/font2.png" alt="Farm Experiences"></p>
+          <p class="text">Farm Experiences</p>
+        </div>
+        <div class="service txt-center">
+          <p><img src="./images/font5.png" alt="Organic food"></p>
+          <p class="text">Organic food</p>
+        </div>
+        <div class="service txt-center">
+          <p><img src="./images/font3.png" alt="100% Natural"></p>
+          <p class="text">100% Natural</p>
+        </div>
+      </div>
+      <div class="about-us d-flex mt-30">
+        <div class="about-text">
+          <h2 class="title">Let Us Tell You Our Story</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio suscipit tempora officiis ab deserunt provident alias corrupti, amet perferendis repellendus sit perspiciatis neque maiores.Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio suscipit tempora officiis ab deserunt provident alias corrupti, amet perferendis repellendusLorem ipsum dolor sit amet consectetur adipisicing elit. Aut optio suscipit tempora officiis ab deserunt provident alias corrupti, amet perferendis repellendus</p>
+          <!-- I change this from li to p-->
+          <p><a href="#" class="btn btn-general uppercase"> Read more</a></p>
+        </div>
+        <div class="about-img">
+          <img src="./images/04.jpg" alt="about wellfedltd" class="image-fluid rounded">
+        </div>
+      </div>
+      <!-- newsletter scetion-->
+      <div class="newsletter m-30">
+        <div class="newsletter-content">
+          <h2>Our Produce Is Mainstay For You</h2>
+          <label>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa maxime, sint cupiditate expedita facere, alias corporis. </label>
+          <form action="" method="post">
+            <p>
+              <input type="email" placeholder="Enter your email address" id="email">
+            </p>
+            <input type="submit" value="Subscribe" name="subscribe" class="btn-submit uppercase">
+          </form>
+        </div>
+      </div>
+      <div class="practices mt-30">
+        <h1 class="section-header title-2"><label>Farming Practices</label> To Preserve Land And Water</h1>
+        <div class="content-section d-flex">
+          <div class="practice txt-center">
+            <img src="./images/04.jpg" alt="Chicken Farmed For Meat" class="image-fluid">
+            <p class="text title-2">Chicken Farmed For Meat</p>
+            <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum?</p>
+            <p><a href="#" class="btn btn-general">Read More</a></button></p>
+          </div>
+          <div class="practice txt-center">
+            <img src="./images/02.jpg" alt="Beef Cattle Farming" class="image-fluid">
+            <p class="text title-2">Beef Cattle Farming</p>
+            <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum?</p>
+            <p><a href="#" class="btn btn-general">Read More</a></button></p>
+          </div>
+          <div class="practice txt-center">
+            <img src="./images/01.jpg" alt="Pig Farm Management" class="image-fluid">
+            <p class="text title-2">Pig Farm Management</p>
+            <p class="body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, illum?</p>
+            <p><a href="#" class="btn btn-general">Read More</a></button></p>
+          </div>
+        </div>
+      </div>
+     
+      <!-- Our Produce -->
+      <div class="our-produce d-flex" style="justify-content: space-between;">
+        <div class="big-image">
+        </div>
+        <div class="produce">
+          <h1 class="section-header text-left title" style="color: #5d5656; margin-left: 0;">Our Produce Is Mainstay For Us</h1>
+          <small><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis magnam itaque nam quasi velit numquam saepe explicabo molestiae suscipit eaque! Laudantium omnis deserunt id amet dignissimos earum harum atque eum et quaerat tempora, officiis fuga repellendus rem dolore! Distinctio, voluptatem.</p></small>
+          <div class="products d-flex mt-30" style="justify-content: space-between;">
+            <div class="service txt-center">
+              <p><img src="./images/font1.png" alt="Best Services"></p>
+              <p class="text">Best Services</p>
+            </div>
+            <div class="service txt-center">
+              <p><img src="./images/font2.png" alt="Farm Experiences"></p>
+              <p class="text">Farm Experiences</p>
+            </div>
+            <div class="service txt-center">
+              <p><img src="./images/font5.png" alt="Organic food"></p>
+              <p class="text">Organic food</p>
+            </div>
+            <div class="service txt-center">
+              <p><img src="./images/font3.png" alt="100% Natural"></p>
+              <p class="text">100% Natural</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- <div class="footer d-flex">
+        <div class="footer-pages">
+          <h2>Social Media</h2>
+          <ul>
+            <p><li><i class="fa fa-phone" style="font-size: 24px"></i> Contact us at 07034405963, 08060261919
+            </li></p>
+            <p><li><i class="fa fa-desktop"></i> www.farmie.com</li></p>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Units</a></li>
+          </ul>
+        </div>
+        <div class="footer-pages" >
+          <h2>Quick Access</h2>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Units</a></li>
+          </ul>
+        </div>
+        <div class="footer-pages">
+          <h2>Available Products</h2>
+          <ul>
+            <li><a href="#">Fruits & Vegetables</a></li>
+            <li><a href="#">Poultry Eggs</a></li>
+            <li><a href="#">Pigs</a></li>
+            <li><a href="#">Chicken</a></li>
+            <li><a href="#">Cows</a></li>
+          </ul>
+        </div>
+        <div class="footer-pages">
+          <h2>Stay Connected</h2>
+          <ul>
+            <li><i class ="fa fa-facebook fa-style color" style="font-size: 26px"></i></li>
+            <li><i class ="fa fa-youtube color" style="font-size: 26px"></i></li>
+            <li><i class ="fa fa-twitter color" style="font-size: 26px"></i></li>
+            <li><i class ="fa fa-instagram color" style="font-size: 26px"></i></li>
+          </ul>
+        </div>
+      </div> -->
+      <div class="footer d-flex" style="justify-content: space-evenly;">
+        <div class="footer-credit">
+          <p>Copyright &copy;2020 All right reserved | <a href="index.html">WellFed Ltd</a></p>
+        </div>
+        <div class="footer-menu">
+          <p>
+            <nav>
+              <a href="#">About</a>
+              <a href="#">Product</a>
+              <a href="#">Sales-Hub Buyer</a>
+              <a href="#">Sales-Hub Seller</a>
+              <a href="#">Contact</a>
+            </nav>
+          </p>
+        </div>
+        
+      </div>
     </div>
 </body>
-<script src="./js/jquery/jquery.min.js"></script>
-<script src="./js/bootstrap/bootstrap.min.js"></script>
-<script>
-	const $msg = $("a#blink");
-
-	$msg.css({opacity:1});
-	let visible = true;
-
-	setInterval(() => {
-			//console.log(visible);
-			if(visible){
-					$msg.css({opacity:0});
-			}else{
-					$msg.css({opacity:1});
-			}
-			visible = !visible;
-	}, 2000);
-</script>
+<script src="js/jquery/jquery.min.js"></script>
+<script src="js/custom.js"></script>
 </html>
