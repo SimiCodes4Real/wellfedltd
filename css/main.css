@@ -296,6 +296,25 @@ body, html{
   text-align: center;
   margin: 30px;
 }
+.content-section-2 {
+  padding: 0 20px;
+  margin: 30px;
+}
+.content-section-2 .content-text p {
+  text-align: justify;
+  line-height: 30px;
+}
+.content-text a {
+  text-decoration: none;
+  color: #aaa;
+}
+.content-text a:hover {
+  color: #555;
+}
+
+.content-section-2 > div{
+  width: 46%;
+}
 
 /* Practice Section */
 .practices .content-section {
@@ -532,7 +551,7 @@ body, html{
 }
 input[type='submit'] {
   padding: 10px 20px;
-  width: 300px;
+  text-align: center;
   text-decoration: none;
   color: #fff;
   font-size: 15px;
@@ -767,6 +786,13 @@ input[type='submit'] {
   }
 }
 
+@media (max-width: 590px){
+  .content-section-2 > div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 .header-banner {
 	background: url('../images/1.jpg');
 	background-repeat: no-repeat;
@@ -799,15 +825,15 @@ input[type='submit'] {
 .form-data {
 	width: 55%;
 	margin: 10px auto;
-	background-color: #f3f3f3;
-	box-shadow: 3px 3px 3px #333;
+	background-color: #fbfbfb;
+	box-shadow: 3px 3px 3px #fbfbfb;
 	height: auto;
 	border-top-left-radius: 7px;
 	border-top-right-radius: 7px;
 }
 .form-data h2 {
 	background-color: #EF3012;
-	color: #fff;
+	color: #dadada;
 	text-align: center;
 	font-size: 1.2em;
 	padding: 10px;
@@ -820,7 +846,6 @@ input[type='submit'] {
 }
 .form-group label {
   font-size: 14px;
-  font-weight: bold;
 }
 .form-group label, .form-group input, .form-group textarea {
   width: 100%;
@@ -828,6 +853,7 @@ input[type='submit'] {
 .form-group input, .form-group textarea {
   background: #fff;
   border: 0;
+  margin-top: 10px;
 }
 .form-group input {
   height: 30px;
