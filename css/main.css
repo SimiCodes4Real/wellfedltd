@@ -817,6 +817,26 @@ input[type='submit'] {
     margin-bottom: 20px;
   }
 }
+@media (max-width: 450px){
+  .banner-content h2 {
+    font-size: 30px;
+    color: #fff;
+    margin-top: 0;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  #slider {
+    height: 380px;
+  }
+
+  .about-text {
+    width: 100%;
+  }
+  .about-img {
+    width: 100%;
+  }
+}
 
 .header-banner {
 	background: url('../images/1.jpg');
@@ -850,7 +870,7 @@ input[type='submit'] {
 .form-data {
 	width: 55%;
 	margin: 10px auto;
-	background-color: #fbfbfb;
+	background-color: #ececec;
 	box-shadow: 3px 3px 3px #fbfbfb;
 	height: auto;
 	border-top-left-radius: 7px;
