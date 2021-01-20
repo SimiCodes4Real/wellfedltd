@@ -67,31 +67,46 @@
 				</div>
 				
       </div>
-      <!-- <div class="services d-flex mt-30">
-        <div class="service txt-center">
-          <p><img src="./images/font1.png" alt="Best Services"></p>
-          <p class="text">Best Services</p>
+
+      <div class="slideshow-container">
+        <div class="mySlides">
+          <q>
+            Each day, 25,000 people including more than 10,000 children, die from hunger and related causes. Some 854 million people worldwide are estimated to be undernourished, and high foods prices may drive another 100 million into poverty and hunger 
+          </q>
+          <p class="author"> - UN</p>
         </div>
-        <div class="service txt-center">
-          <p><img src="./images/font2.png" alt="Farm Experiences"></p>
-          <p class="text">Farm Experiences</p>
+        <div class="mySlides">
+          <q>
+            Each day, 25,000 people including more than 10,000 children, die from hunger and related causes. Some 854 million people worldwide are estimated to be undernourished, and high foods prices may drive another 100 million into poverty and hunger 
+          </q>
+          <p class="author"> - UNN</p>
         </div>
-        <div class="service txt-center">
-          <p><img src="./images/font5.png" alt="Organic food"></p>
-          <p class="text">Organic food</p>
+        <div class="mySlides">
+          <q>
+            Each day, 25,000 people including more than 10,000 children, die from hunger and related causes. Some 854 million people worldwide are estimated to be undernourished, and high foods prices may drive another 100 million into poverty and hunger 
+          </q>
+          <p class="author"> - UN</p>
         </div>
-        <div class="service txt-center">
-          <p><img src="./images/font3.png" alt="100% Natural"></p>
-          <p class="text">100% Natural</p>
-        </div>
-      </div> -->
-      <div class="quote-section">
+
+        <!-- Next/Prev buttons-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+      </div>
+
+      <!-- Dots/bullets/indicators -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+      <!-- <div class="quote-section">
         <hr/>
         <blockquote>
           Each day, 25,000 people including more than 10,000 children, die from hunger and related causes. Some 854 million people worldwide are estimated to be undernourished, and high foods prices may drive another 100 million into poverty and hunger - UN
         </blockquote>
         <hr/>
-      </div>
+      </div> -->
       <div class="about-us d-flex mt-30">
         <div class="about-text">
           <h2 class="title">ABOUT US</h2>
@@ -109,7 +124,7 @@
         <div class="newsletter-content">
           <h2>Get updates on what we are doing</h2>
           <label>
-            Our customers are our partners! Please subscribe to get updates on what we have done, what we are doing, and what we are planning to do.
+            Our customers are our partners! Subscribe to get updates on what we have done, what we are doing, and what we are planning to do.
           </label>
           <form action="" method="post">
             <p>
@@ -176,4 +191,50 @@
 </body>
 <script src="js/jquery/jquery.min.js"></script>
 <script src="js/custom.js"></script>
+<script>
+  let slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  // setInterval(()=>{
+  //   //get active slider position
+  //   let slides = document.getElementsByClassName("mySlides");
+  //   let dots = document.getElementsByClassName("dot");
+  //   //slider = slider < images ? slider + 1 : 1;
+  //   for (i = 0; i < dots.length; i++) {
+  //     dots[i].className = dots[i].className.replace(" active", "");
+  //   }
+  //   //dots[slides-1].className += " active";
+
+  //   if (slides == 1){dots[0].className = " active";}
+  //   // instantly hide all slides
+  //   $('.slideshow-container .mySlides').css('opacity', .0);
+
+  //   // showing the current index
+  //   $('.slideshow-container .mySlides').eq(slides - 1).css('opacity', 1);
+  // }, 5000)
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  } 
+</script>
 </html>
